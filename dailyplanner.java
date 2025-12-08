@@ -14,9 +14,8 @@ public class Dailyplanner {
         planner.menu(sc);
     }
 
-    // ============================
     //           MENU
-    // ============================
+
     public void menu(Scanner sc) {
         int choice = 0;
 
@@ -50,9 +49,8 @@ public class Dailyplanner {
         }
     }
 
-    // ============================
     //       ADD TASK
-    // ============================
+
     public void addTask(Scanner sc) {
         System.out.println("\n--- ADD TASK ---");
 
@@ -66,10 +64,8 @@ public class Dailyplanner {
 
         System.out.println("Task added successfully!");
     }
-
-    // ============================
     //       VIEW TASKS
-    // ============================
+
     public void viewTask() {
         System.out.println("\n--- ALL TASKS ---");
 
@@ -83,9 +79,8 @@ public class Dailyplanner {
         }
     }
 
-    // ============================
     //      REMOVE TASK
-    // ============================
+
     public void removeTask(Scanner sc) {
         System.out.println("\n--- REMOVE TASK ---");
 
@@ -104,6 +99,7 @@ public class Dailyplanner {
             if (dates[i].equals(date) && tasks[i].equalsIgnoreCase(desc)) {
 
                 // Shift elements left
+
                 for (int j = i; j < count - 1; j++) {
                     dates[j] = dates[j + 1];
                     tasks[j] = tasks[j + 1];
