@@ -20,7 +20,7 @@ public class Dailyplanner {
         int choice = 0;
 
         while (choice != 4) {
-            System.out.println("\n=== DAILY PLANNER ===");
+            System.out.println("\n DAILY PLANNER ");
             System.out.println("1. Add task");
             System.out.println("2. View all tasks");
             System.out.println("3. Remove a task");
@@ -52,7 +52,7 @@ public class Dailyplanner {
     //       ADD TASK
 
     public void addTask(Scanner sc) {
-        System.out.println("\n--- ADD TASK ---");
+        System.out.println("\n ADD TASK ");
 
         System.out.print("Enter date (YYYY-MM-DD): ");
         dates[count] = sc.nextLine();
@@ -67,7 +67,7 @@ public class Dailyplanner {
     //       VIEW TASKS
 
     public void viewTask() {
-        System.out.println("\n--- ALL TASKS ---");
+        System.out.println("\n ALL TASKS");
 
         if (count == 0) {
             System.out.println("No tasks available.");
@@ -82,7 +82,7 @@ public class Dailyplanner {
     //      REMOVE TASK
 
     public void removeTask(Scanner sc) {
-        System.out.println("\n--- REMOVE TASK ---");
+        System.out.println("\n REMOVE TASK ");
 
         if (count == 0) {
             System.out.println("No tasks to remove!");
