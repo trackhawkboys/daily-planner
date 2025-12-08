@@ -4,10 +4,12 @@ public class Dailyplanner {
 
     // Arrays to store tasks
     String[] dates = new String[200];
-    String[] tasks = new String[200];
+    String[] tasks = new String[200]; // the number of tasks and dates that can be added
+    //keeps track of tasks
     int count = 0;
 
     public static void main(String[] args) {
+        //scanner input 
         Scanner sc = new Scanner(System.in);
         Dailyplanner planner = new Dailyplanner();
 
@@ -18,7 +20,7 @@ public class Dailyplanner {
 
     public void menu(Scanner sc) {
         int choice = 0;
-
+        //menu display 
         while (choice != 4) {
             System.out.println("\n DAILY PLANNER ");
             System.out.println("1. Add task");
@@ -29,7 +31,7 @@ public class Dailyplanner {
 
             choice = sc.nextInt();
             sc.nextLine(); // Clear input buffer
-
+            //switch case to give the user results when a number is choosen
             switch (choice) {
                 case 1:
                     addTask(sc);
@@ -96,7 +98,7 @@ public class Dailyplanner {
         String desc = sc.nextLine();
 
         for (int i = 0; i < count; i++) {
-            if (dates[i].equals(date) && tasks[i].equalsIgnoreCase(desc)) {
+            if (dates[i].equals(date) && tasks[i].equalsIgnoreCase(desc)) { //
 
                 // Shift elements left
 
